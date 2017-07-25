@@ -37,7 +37,7 @@ Sales_data& Sales_data::combine(Sales_data& rsd) {
     return *this;
 }
 
-Sales_data add(const Sales_data& item1, const Sales_data& item2) {
+Sales_data add(Sales_data& item1, Sales_data& item2) {
     Sales_data sum = item1;
     sum.combine(item2);
     return sum;
